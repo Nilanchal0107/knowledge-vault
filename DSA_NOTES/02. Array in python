@@ -1,0 +1,463 @@
+# 📦 Arrays in Python — Chai aur DSA Notes
+
+> Beginner-friendly notes on **Arrays in Python** from the *Chai aur DSA* series.
+> Covers concepts, Python implementations, and key array operations.
+
+# 📑 Table of Contents
+
+* [1. What is an Array?](#1-what-is-an-array)
+* [2. Array Characteristics](#2-array-characteristics)
+* [3. Python vs Other Languages](#3-python-vs-other-languages)
+* [4. Creating Arrays in Python](#4-creating-arrays-in-python)
+* [5. Accessing Elements](#5-accessing-elements)
+* [6. Looping Through Arrays](#6-looping-through-arrays)
+* [7. Array Operations](#7-array-operations)
+* [8. Array Slicing](#8-array-slicing)
+* [9. User Input Arrays](#9-user-input-arrays)
+* [10. Searching in Arrays](#10-searching-in-arrays)
+* [11. NumPy Arrays](#11-numpy-arrays)
+* [12. Creating Arrays Quickly (NumPy)](#12-creating-arrays-quickly-numpy)
+* [13. Multi-Dimensional Arrays](#13-multi-dimensional-arrays)
+* [🎯 Key Takeaways](#-key-takeaways)
+
+---
+
+# 1. What is an Array?
+
+An **Array** is a data structure used to store multiple elements in **contiguous memory locations**.
+
+📌 Definition:
+
+> An array is a **collection of elements stored in sequential memory**.
+
+Example:
+
+```python
+arr = [10, 20, 30, 40]
+```
+
+Here:
+
+| Index | Value |
+| ----- | ----- |
+| 0     | 10    |
+| 1     | 20    |
+| 2     | 30    |
+| 3     | 40    |
+
+---
+
+# 2. Array Characteristics
+
+| Feature           | Explanation                        |
+| ----------------- | ---------------------------------- |
+| Contiguous Memory | Elements stored next to each other |
+| Indexed Access    | Access using index                 |
+| Ordered           | Elements maintain order            |
+| Fast Access       | O(1) lookup                        |
+
+Example:
+
+```python
+arr[0]   # first element
+arr[2]   # third element
+```
+
+---
+
+# 3. Python vs Other Languages
+
+| Language       | Array Behavior |
+| -------------- | -------------- |
+| C / C++ / Java | Fixed size     |
+| Python         | Dynamic size   |
+
+Example:
+
+C++:
+
+```cpp
+int arr[5];
+```
+
+Python:
+
+```python
+arr = [1,2,3,4]
+```
+
+Python arrays can **grow dynamically**.
+
+---
+
+# 4. Creating Arrays in Python
+
+Python provides an **array module**.
+
+### Import Array Module
+
+```python
+import array
+```
+
+### Create an Array
+
+```python
+arr = array.array('i', [1,2,3,4,5])
+```
+
+| Parameter | Meaning      |
+| --------- | ------------ |
+| `'i'`     | integer type |
+| list      | elements     |
+
+Example Output
+
+```
+array('i', [1,2,3,4,5])
+```
+
+---
+
+# 5. Accessing Elements
+
+Array elements are accessed using **indexing**.
+
+```python
+arr = array.array('i', [10,20,30])
+
+print(arr[0])
+print(arr[1])
+```
+
+Output
+
+```
+10
+20
+```
+
+📌 Important
+
+Indexing starts from **0**
+
+---
+
+# 6. Looping Through Arrays
+
+### Method 1 — Using Index
+
+```python
+for i in range(len(arr)):
+    print(arr[i])
+```
+
+### Method 2 — Direct Iteration
+
+```python
+for x in arr:
+    print(x)
+```
+
+| Method      | Advantage       |
+| ----------- | --------------- |
+| Index loop  | Access position |
+| Direct loop | Simpler         |
+
+---
+
+# 7. Array Operations
+
+## Insert Element
+
+```python
+arr.insert(1, 50)
+```
+
+Example:
+
+```
+[1, 50, 2, 3]
+```
+
+---
+
+## Append Element
+
+Adds element at end.
+
+```python
+arr.append(100)
+```
+
+---
+
+## Update Element
+
+```python
+arr[2] = 200
+```
+
+---
+
+## Remove Element
+
+### Remove by Index
+
+```python
+arr.pop(3)
+```
+
+### Remove by Value
+
+```python
+arr.remove(50)
+```
+
+---
+
+## Reverse Array
+
+```python
+arr.reverse()
+```
+
+---
+
+# 8. Array Slicing
+
+Used to extract a portion of the array.
+
+Syntax:
+
+```
+array[start : end]
+```
+
+Example:
+
+```python
+arr = [1,2,3,4,5,6]
+
+print(arr[2:5])
+```
+
+Output
+
+```
+[3,4,5]
+```
+
+📌 Rules
+
+| Rule           | Explanation |
+| -------------- | ----------- |
+| start included | ✔           |
+| end excluded   | ❌           |
+
+---
+
+### Reverse using slicing
+
+```python
+arr[::-1]
+```
+
+---
+
+# 9. User Input Arrays
+
+Example:
+
+```python
+import array
+
+arr = array.array('i', [])
+
+n = int(input("Enter number of elements: "))
+
+for i in range(n):
+    num = int(input("Enter number: "))
+    arr.append(num)
+
+print(arr)
+```
+
+---
+
+# 10. Searching in Arrays
+
+Python provides an **index() function**.
+
+Example:
+
+```python
+arr = [12,45,23,134]
+
+print(arr.index(45))
+```
+
+Output
+
+```
+1
+```
+
+If element does not exist → **Error**
+
+---
+
+# 11. NumPy Arrays
+
+NumPy is used for **advanced arrays and numerical computation**.
+
+Install NumPy
+
+```
+pip install numpy
+```
+
+Import
+
+```python
+import numpy as np
+```
+
+Create Array
+
+```python
+arr = np.array([1,2,3,4])
+```
+
+Output
+
+```
+[1 2 3 4]
+```
+
+---
+
+# 12. Creating Arrays Quickly (NumPy)
+
+### Zeros
+
+```python
+np.zeros(5)
+```
+
+Output
+
+```
+[0 0 0 0 0]
+```
+
+---
+
+### Ones
+
+```python
+np.ones(5)
+```
+
+Output
+
+```
+[1 1 1 1 1]
+```
+
+---
+
+### Full
+
+```python
+np.full(5, 7)
+```
+
+Output
+
+```
+[7 7 7 7 7]
+```
+
+---
+
+### Arange
+
+```python
+np.arange(10,20,2)
+```
+
+Output
+
+```
+[10 12 14 16 18]
+```
+
+---
+
+### Linspace
+
+```python
+np.linspace(10,20,5)
+```
+
+Output
+
+```
+[10 12.5 15 17.5 20]
+```
+
+---
+
+# 13. Multi-Dimensional Arrays
+
+## 1D Array
+
+```python
+np.array([1,2,3])
+```
+
+---
+
+## 2D Array
+
+```python
+np.array([
+[1,2,3],
+[4,5,6],
+[7,8,9]
+])
+```
+
+Matrix Representation
+
+```
+1 2 3
+4 5 6
+7 8 9
+```
+
+---
+
+## 3D Array
+
+```python
+np.array([
+ [[1,2],[3,4]],
+ [[5,6],[7,8]]
+])
+```
+
+---
+
+# 🎯 Key Takeaways
+
+✅ Arrays store elements in **contiguous memory**
+✅ Access using **indexing**
+✅ Python arrays are **dynamic**
+✅ `array module` → basic arrays
+✅ `NumPy` → advanced arrays
+✅ Use slicing for **sub arrays**
+✅ Use `index()` for searching
+
+---
