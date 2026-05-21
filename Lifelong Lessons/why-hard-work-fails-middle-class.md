@@ -1,6 +1,6 @@
 # Why Hard Work & Discipline Fail the Middle Class
 
-![YouTube](https://img.shields.io/badge/YouTube-GetsetflySCIENCE--by--Gaurav--Thakur-red?logo=youtube) ![Language](https://img.shields.io/badge/Language-Hindi-orange) ![Topic](https://img.shields.io/badge/Topic-Success%20Systems-blue) ![Duration](https://img.shields.io/badge/Duration-~31%20mins-green)
+![YouTube](https://img.shields.io/badge/YouTube-GetsetflySCIENCE-by-Gaurav-Thakur-red?logo=youtube) ![Language](https://img.shields.io/badge/Language-Hindi-orange) ![Topic](https://img.shields.io/badge/Topic-Success%20Systems-blue) ![Duration](https://img.shields.io/badge/Duration-~31%20mins-green)
 
 > **Video Link:** [https://www.youtube.com/watch?v=IjIVBleSfc4](https://www.youtube.com/watch?v=IjIVBleSfc4)
 >
