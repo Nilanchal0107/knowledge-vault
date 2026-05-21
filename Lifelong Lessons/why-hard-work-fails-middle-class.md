@@ -4,7 +4,7 @@
 
 > **Video Link:** [https://www.youtube.com/watch?v=IjIVBleSfc4](https://www.youtube.com/watch?v=IjIVBleSfc4)
 >
-> **Channel:** Psycho (Science-based Hindi content)
+> **Channel:** GetsetflySCIENCE by Gaurav Thakur (Science-based Hindi content)
 
 ---
 
@@ -247,4 +247,4 @@ This is not salary math. This is **success probability architecture score** — 
 
 ---
 
-*Summary by Claude | Source: Psycho YouTube Channel*
+Source: GetsetflySCIENCE by Gaurav Thakur Youtube Channel*
